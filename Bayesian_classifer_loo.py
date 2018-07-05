@@ -144,20 +144,15 @@ for i in range(50):
 
     # 距離dの最小値がクラスsetosaの時
     if min(ds) == ds[0]:
-        # print("setosa to setosa")
         mixing_mat[0][0] += 1
 
     # 距離dの最小値がクラスversicolorの時
     elif min(ds) == ds[1]:
-        # print("setosa to versicolor")
         mixing_mat[1][0] += 1
 
     # 距離dの最小値がクラスviriginicaの時
     elif min(ds) == ds[2]:
-        #  print("setosa to viriginica")
         mixing_mat[2][0] += 1
-        #  print(ds)
-        #  print
 
 # versicolorの中から1つずつ取り出しテストサンプルにしテストする
 for i in range(50):
@@ -187,20 +182,15 @@ for i in range(50):
 
     # 距離dの最小値がクラスsetosaの時
     if (min(ds) == ds[0]):
-        #  print("virsicolor to setosa")
         mixing_mat[0][1] += 1
 
     # 距離dの最小値がクラスversicolorの時
     elif min(ds) == ds[1]:
-        #  print("versicolor to versicolor")
         mixing_mat[1][1] += 1
 
     # 距離dの最小値がクラスviriginicaの時
     elif min(ds) == ds[2]:
-        #  print("versicolor to viriginica")
         mixing_mat[2][1] += 1
-        # print(ds)
-        # print
 
 # viriginicaの中から1つずつ取り出しテストサンプルにしテストする
 for i in range(50):
@@ -230,20 +220,18 @@ for i in range(50):
 
     # 距離dの最小値がクラスsetosaの時
     if min(ds) == ds[0]:
-        # print("viriginica to setosa")
+
         mixing_mat[0][2] += 1
 
     # 距離dの最小値がクラスversicolorの時
     elif min(ds) == ds[1]:
-        # print( "viriginica to versicolor")
         mixing_mat[1][2] += 1
 
     # 距離dの最小値がクラスviriginicaの時
     elif min(ds) == ds[2]:
-        # print( "viriginica to viriginica")
+
         mixing_mat[2][2] += 1
-        # print(ds)
-        # print
+
 
 print(mixing_mat)
 for i in range(3):
