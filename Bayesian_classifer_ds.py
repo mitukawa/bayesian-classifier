@@ -135,53 +135,39 @@ for i in range(25):
     ds = [iris[0].d(testvector), iris[1].d(testvector), iris[2].d(testvector)]
 
     if min(ds) == ds[0]:
-        print("setosa to setosa")
         mixing_mat[0][0] += 1
 
     elif min(ds) == ds[1]:
-        print("setosa to versicolor")
         mixing_mat[1][0] += 1
     elif min(ds) == ds[2]:
-        print("setosa to viriginica")
         mixing_mat[2][0] += 1
-    print(ds)
-    print
 
 for i in range(25):
     testvector = versicolor[i+25]
     ds = [iris[0].d(testvector), iris[1].d(testvector), iris[2].d(testvector)]
 
     if (min(ds) == ds[0]):
-        print("virsicolor to setosa")
         mixing_mat[0][1] += 1
 
     elif min(ds) == ds[1]:
-        print("versicolor to versicolor")
         mixing_mat[1][1] += 1
 
     elif min(ds) == ds[2]:
-        print("versicolor to viriginica")
+
         mixing_mat[2][1] += 1
-    print(ds)
-    print
 
 for i in range(25):
     testvector = viriginica[i+25]
     ds = [iris[0].d(testvector), iris[1].d(testvector), iris[2].d(testvector)]
 
     if min(ds) == ds[0]:
-        print("viriginica to setosa")
         mixing_mat[0][2] += 1
 
     elif min(ds) == ds[1]:
-        print( "viriginica to versicolor")
         mixing_mat[1][2] += 1
 
     elif min(ds) == ds[2]:
-        print( "viriginica to viriginica")
         mixing_mat[2][2] += 1
-    print(ds)
-    print
 
 print(mixing_mat)
 for i in range(3):
