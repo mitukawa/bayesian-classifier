@@ -129,7 +129,8 @@ for i in range(3):
 # テストサンプルに対する識別
 e = 0.0  # 誤識別率
 
-# 間違って識別した回数をeにカウント
+# 分割代入法でテスト
+# 距離を求めて間違って識別した回数を混合行列にカウント
 for i in range(25):
     testvector = setosa[i+25]
     ds = [iris[0].d(testvector), iris[1].d(testvector), iris[2].d(testvector)]
@@ -172,7 +173,6 @@ for i in range(25):
 print(mixing_mat)
 for i in range(3):
     e += mixing_mat[i][i]
-print(e)
 e /= 75
 e = 1 - e
 print(e*100)
